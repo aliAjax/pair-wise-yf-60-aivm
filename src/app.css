@@ -30,4 +30,24 @@ button:disabled { opacity:.45; cursor:not-allowed; }
 .tabs [role="tab"] { background:#e4eeee; color:#173c43; }
 .tabs [role="tab"][data-selected] { background:#0f766e; color:white; }
 .timeline { border-left:2px solid #b9d6d6; margin-left:6px; padding-left:16px; }
-@media(max-width:900px){ .hero{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr} }
+.identity-bar { display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:flex-end; }
+.identity-label { font-weight:600; color:#5d7780; font-size:13px; }
+.role-switch { display:flex; gap:6px; flex-wrap:wrap; }
+.identity-on { background:#082f49; color:#fff; }
+.banner { border-radius:10px; padding:10px 12px; margin:10px 0; background:#eef5f7; color:#173c43; border:1px solid #cbdfe4; }
+.banner.ok { background:#e9f7f0; border-color:#9fd4b8; color:#14532d; }
+.banner.warn { background:#fdf2e3; border-color:#f3cf9a; color:#7c2d12; }
+.banner.error { background:#fdeceb; border-color:#f0b4ae; color:#7f1d1d; }
+.lease-panel { background:#f7fafb; border:1px dashed #b9d0d3; border-radius:12px; padding:12px; margin:12px 0; display:grid; gap:10px; }
+.lease-panel label { font-size:13px; color:#40606a; }
+.row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+.handover-box, .coordinator-box { background:#fff; border:1px solid #d7e5e7; border-radius:10px; padding:10px 12px; display:grid; gap:8px; }
+.status-actions { display:flex; gap:8px; flex-wrap:wrap; }
+.retry-box { display:flex; gap:10px; align-items:center; flex-wrap:wrap; background:#fdeceb; border:1px solid #f0b4ae; color:#7f1d1d; border-radius:10px; padding:10px 12px; margin:10px 0; }
+.badge.lease-on { background:#e0f2fe; color:#075985; }
+.badge.lease-expired { background:#fee2e2; color:#991b1b; }
+.badge.handover { background:#fef3c7; color:#92400e; }
+.badge.severity-critical { background:#fee2e2; color:#991b1b; font-weight:700; }
+.badge.system-actor { background:#e5e7eb; color:#374151; }
+.full-width { grid-column:1 / -1; }
+@media(max-width:900px){ .hero{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.identity-bar{justify-content:flex-start} }
